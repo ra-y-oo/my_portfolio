@@ -1,0 +1,107 @@
+:root{
+    --accent: #63CDC9;
+    --nav-bg: #96B5B4;
+    --nav-hover: #00524F;
+    --font-size: medium;
+}
+*{
+   // border: 2px solid red;
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+}
+span{
+    color: var(--accent);
+}
+.me{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 100vh;
+    z-index: -999;
+}
+.content{
+    margin-top: 50px;
+    width: fit-content;
+    max-width: 55%;
+    padding: 50px;
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .job-title{
+        background-color: var(--accent);
+        width: max-content;
+        font-size: var(--font-size);
+    }
+    p{
+       font-size: var(--font-size); 
+    }
+}
+.btn{
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--accent);
+    .btn-link{
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        font-size:var(--font-size);
+        font-weight: bold;
+    }
+}
+.btn:hover{
+    border: 2px solid var(--accent);
+    background-color: transparent;
+    .btn-link{
+        color: var(--accent);
+    }
+}
+
+
+//ABOUT PAGE STYLES ONLY
+.about-section{
+    margin-left: 15rem;
+    .head{
+        font-size: 2rem;
+    }
+    .head-text{
+        font-size: 1.5rem;
+    }
+}
+
+
+//NAVIGATION BAR STYLES
+.nav-bar{
+    background-color: var(--nav-bg);
+    height: 100vh;
+    max-width: 10rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .profile{
+    max-width: 10rem;
+    }
+    .nav{
+        text-align: center;
+        .nav-item{
+            margin: 10px;
+            margin-right: 1.5rem;
+            padding: 20px;
+            list-style: none;
+        .nav-link{
+            text-decoration: none;
+            color: white;
+            font-size: medium;
+            font-weight: bold;
+        }
+    }
+    }
+}
+.nav-item:hover{
+    .nav-link:hover{
+        color: var(--nav-hover);
+    }
+}
