@@ -2,7 +2,7 @@
   --accent: #63CDC9;
   --nav-bg: #96B5B4;
   --nav-hover: #00524F;
-  --font-size: medium;
+  --font-size: 1.1rem;
 }
 
 * {
@@ -17,8 +17,11 @@ span {
 .me {
   position: absolute;
   right: 0px;
-  top: 0;
-  height: 100vh;
+  bottom: 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: 600px;
   z-index: -999;
 }
 
@@ -71,6 +74,7 @@ span {
 
 .about-section {
   margin-left: 15rem;
+  margin-right: 5rem;
 }
 .about-section .head {
   font-size: 2rem;
@@ -108,4 +112,18 @@ span {
 
 .nav-item:hover .nav-link:hover {
   color: var(--nav-hover);
+}
+
+@media (max-width: 800px) {
+  .me {
+    display: none;
+  }
+  .content {
+    max-width: 100%;
+    padding: 50px;
+  }
+  .nav-bar {
+    max-width: 100%;
+    position: fixed;
+  }
 }/*# sourceMappingURL=style.css.map */
